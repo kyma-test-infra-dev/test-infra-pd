@@ -36,10 +36,10 @@ func validationOptions() (options, error) {
 	flag.Parse()
 
 	if o.prowConfig == "" {
-		return o, errors.New("Path to Prow config file is required")
+		return o, errors.New("Path to prow config file is required")
 	}
 	if o.jobConfigDir == "" {
-		return o, errors.New("Path to dir with job config files is required")
+		return o, errors.New("Path to dDir with job config files is required")
 	}
 
 	return o, nil
